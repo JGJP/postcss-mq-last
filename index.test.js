@@ -10,10 +10,9 @@ function run(input, output, opts) {
         });
 }
 
-/* Write tests here
+var input = '@media (max-width: 544px) { a{ text-decoration: underline } } a{ text-decoration: none }';
+var output = 'a{ text-decoration: none } @media (max-width: 544px) { a{ text-decoration: underline } }';
 
-it('does something', () => {
-    return run('a{ }', 'a{ }', { });
+it('outputs media query last', () => {
+    return run(input, output, { });
 });
-
-*/
