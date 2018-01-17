@@ -11,7 +11,8 @@ module.exports = postcss.plugin('postcss-mq-last', function () {
 
         while ( i < len ) {
 
-            if ( root.nodes[i].type === 'atrule' ) {
+            if ( root.nodes[i].type === 'atrule' &&
+            	root.nodes[i].name === 'media' ) {
 
                 cloned = root.nodes[i];
                 root.nodes[i].remove();

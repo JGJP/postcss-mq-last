@@ -10,9 +10,14 @@ function run(input, output, opts) {
         });
 }
 
-var input = '@media (max-width: 544px) { a{ text-decoration: underline } }';
+var input = '';
+input += '@media (max-width: 544px) { a{ text-decoration: underline } }';
+input += '@keyframes mymove {from {top: 0px;}to {top: 200px;}}';
 input += 'a{ text-decoration: none }';
-var output = 'a{ text-decoration: none }';
+
+var output = '';
+output += '@keyframes mymove {from {top: 0px;}to {top: 200px;}}';
+output += 'a{ text-decoration: none }';
 output += '@media (max-width: 544px) { a{ text-decoration: underline } }';
 
 it('outputs media query last', () => {
