@@ -1,13 +1,30 @@
 var postcss = require('postcss');
 
-module.exports = postcss.plugin('postcss-mq-last', function (opts) {
-    opts = opts || {};
+module.exports = postcss.plugin('postcss-mq-last', function () {
 
-    // Work with options here
+    return function (root) {
 
-    return function (root, result) {
+        var cloned;
 
-        // Transform CSS AST here
+        var i = 0;
+        var len = root.nodes.length;
+
+        while ( i < len ) {
+
+            if ( root.nodes[i].type === 'atrule' ) {
+
+                cloned = root.nodes[i];
+                root.nodes[i].remove();
+                root.append(cloned);
+                len--;
+
+            } else {
+
+                i++;
+
+            }
+
+        }
 
     };
 });

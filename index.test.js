@@ -10,8 +10,10 @@ function run(input, output, opts) {
         });
 }
 
-var input = '@media (max-width: 544px) { a{ text-decoration: underline } } a{ text-decoration: none }';
-var output = 'a{ text-decoration: none } @media (max-width: 544px) { a{ text-decoration: underline } }';
+var input = '@media (max-width: 544px) { a{ text-decoration: underline } }';
+input += 'a{ text-decoration: none }';
+var output = 'a{ text-decoration: none }';
+output += '@media (max-width: 544px) { a{ text-decoration: underline } }';
 
 it('outputs media query last', () => {
     return run(input, output, { });
