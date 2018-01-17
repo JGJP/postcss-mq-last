@@ -1,0 +1,38 @@
+{
+  "name": "postcss-mq-last",
+  "version": "0.0.0",
+  "description": "PostCSS plugin that gives media query rules precedence by moving them to the end of the file",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "media",
+    "query",
+    "last",
+    "precedence"
+  ],
+  "author": "J <j@jgarcia.jp>",
+  "license": "MIT",
+  "repository": "jgjp/postcss-mq-last",
+  "bugs": {
+    "url": "https://github.com/jgjp/postcss-mq-last/issues"
+  },
+  "homepage": "https://github.com/jgjp/postcss-mq-last",
+  "dependencies": {
+    "postcss": "^6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^20.0.0"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "env": {
+      "jest": true
+    }
+  }
+}
