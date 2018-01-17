@@ -7,8 +7,8 @@ Sometimes, when working with nesting plugins, media atrules are output before ot
 Since media queries don't raise specificity, this plugin moves media atrules to the end of the output, making them override non-media query rules.
 
 [PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/jgjp/postcss-mq-last.svg
-[ci]:      https://travis-ci.org/jgjp/postcss-mq-last
+[ci-img]:  https://travis-ci.org/JGJP/postcss-mq-last.svg
+[ci]:      https://travis-ci.org/JGJP/postcss-mq-last
 
 ```css
 @media (max-width: 34em) {
