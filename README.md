@@ -10,6 +10,8 @@ Since media queries don't raise specificity, this plugin moves media atrules to 
 [ci-img]:  https://travis-ci.org/JGJP/postcss-mq-last.svg
 [ci]:      https://travis-ci.org/JGJP/postcss-mq-last
 
+Input:
+
 ```css
 @media (max-width: 34em) {
     .half.stackable {
@@ -21,6 +23,8 @@ Since media queries don't raise specificity, this plugin moves media atrules to 
 	width: 50%
 }
 ```
+
+Output:
 
 ```css
 .half.stackable {
