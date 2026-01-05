@@ -1,6 +1,6 @@
 {
   "name": "postcss-mq-last",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "PostCSS plugin that gives media query rules precedence by moving them to the end of the file",
   "keywords": [
     "postcss",
@@ -39,8 +39,14 @@
       "ecmaVersion": 2020
     },
     "rules": {
-      "semi": ["error", "always"],
-      "quotes": ["error", "single"]
+      "semi": [
+        "error",
+        "always"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ]
     }
   }
 }
